@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import GlobalStyle from './components/GlobalStyled';
+import { GlobalStyle } from './components/GlobalStyled';
 import { ThemeProvider } from 'styled-components';
-import { constants } from './constans/Constants';
+import { constants } from './constans/constans';
 import 'normalize.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
