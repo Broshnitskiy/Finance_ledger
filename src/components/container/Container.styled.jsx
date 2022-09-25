@@ -5,10 +5,6 @@ export const Div = styled.div`
   padding-left: 20px;
   padding-right: 20px;
 
-  @media screen and (max-width: 320px) {
-    width: 320px;
-  }
-
   @media screen and (min-width: 480px) {
     width: 480px;
   }

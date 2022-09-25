@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 
+export const Header = styled.header`
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+`;
+
 export const Div = styled.div`
   ul {
     display: flex;
@@ -8,7 +15,7 @@ export const Div = styled.div`
     font-size: 16px;
     line-height: 22px;
 
-    color: red;
+    color: ${props => props.theme.colors.$white};
 
     li:not(:last-child) {
       margin-right: 12px;
@@ -26,8 +33,16 @@ export const Div = styled.div`
       font-size: 18px;
       line-height: 25px;
       margin-left: auto;
+
+      li:not(:last-child) {
+        margin-right: 20px;
+      }
     }
   }
-`;
 
-export const Header = styled.header``;
+  @media (min-width: 1360px) {
+    ul > li:not(:last-child) {
+      margin-right: 43px;
+    }
+  } ;
+`;
