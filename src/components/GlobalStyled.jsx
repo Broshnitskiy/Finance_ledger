@@ -15,6 +15,12 @@ font-weight: 400;
  html {
     scroll-behavior: smooth;
   }
+
+  button{
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
 a {
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);

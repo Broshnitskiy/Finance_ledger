@@ -36,13 +36,56 @@ export const Section = styled.section`
     margin-bottom: 24px;
   }
 
+  button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 25px;
+    background: ${props => props.theme.colors.$styleColor};
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: inherit;
+  }
+
+  button:hover {
+    background: #2ebf4f;
+  }
+
+  button > img {
+    display: inline-block;
+    margin-right: 8px;
+  }
+
   @media screen and (min-width: 768px) {
     max-width: 768px;
     min-height: 1024px;
+
+    h1 {
+      font-size: 55px;
+      line-height: 75px;
+      padding-top: 378px;
+    }
+
+    p {
+      font-size: 40px;
+      line-height: 48px;
+    }
   }
 
   @media screen and (min-width: 1360px) {
     max-width: 1360px;
     min-height: 768px;
+
+    h1 {
+      padding-top: 272px;
+    }
+
+    p {
+      line-height: 54px;
+    }
   }
 `;
