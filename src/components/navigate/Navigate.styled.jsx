@@ -2,9 +2,12 @@ import styled from 'styled-components';
 
 export const Header = styled.header`
   position: fixed;
-  top: 20px;
+  padding-top: 22px;
+  padding-bottom: 12px;
+  top: 0;
   left: 50%;
   transform: translate(-50%);
+  background-color: ${prop => (prop.scrolled ? 'rgba(0, 0, 0, 0.6)' : 'unset')};
 `;
 
 export const Div = styled.div`
@@ -17,12 +20,17 @@ export const Div = styled.div`
 
     color: ${props => props.theme.colors.$white};
 
+    a {
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+
     li:not(:last-child) {
       margin-right: 12px;
     }
 
     li :hover {
-      border-bottom: 2px solid ${props => props.theme.colors.$styleColor};
+      border-bottom: 4px solid ${props => props.theme.colors.$styleColor};
     }
   }
 

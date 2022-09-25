@@ -2,10 +2,14 @@ import React from 'react';
 import { Logo } from '../logo/Logo';
 import { Header, Div } from './Navigate.styled';
 import { Container } from '../container/Container';
+import { useWindowScrollPositions } from '../../hooks/useWindowScrollPosition';
 
 export const Navigate = () => {
+  const { scrollY } = useWindowScrollPositions();
+
+  console.log(scrollY);
   return (
-    <Header>
+    <Header scrolled={scrollY >= 100}>
       <Container>
         <Div>
           <Logo />
