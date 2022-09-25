@@ -17,6 +17,14 @@ export const Section = styled.section`
     margin-bottom: 31px;
   }
 
+  img {
+    cursor: pointer;
+    object-fit: cover;
+    width: 280px;
+    height: 176px;
+    margin-bottom: 8px;
+  }
+
   @media screen and (min-width: 768px) {
     font-size: 18px;
     line-height: 25px;

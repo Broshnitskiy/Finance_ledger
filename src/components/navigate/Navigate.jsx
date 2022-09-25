@@ -7,7 +7,6 @@ import { useWindowScrollPositions } from '../../hooks/useWindowScrollPosition';
 export const Navigate = () => {
   const { scrollY } = useWindowScrollPositions();
 
-  console.log(scrollY);
   return (
     <Header scrolled={scrollY >= 100}>
       <Container>
