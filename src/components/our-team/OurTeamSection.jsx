@@ -29,18 +29,18 @@ export const OurTeamSection = () => {
                   <img src={el.imageJpg1x} alt={el.alt} />
                 </picture>
                 <Overlay>
-                  <span>
+                  <a href="##">
                     <BsFacebook size="35px" color="white" />
-                  </span>
-                  <span>
+                  </a>
+                  <a href="##">
                     <BsTwitter size="35px" color="white" />
-                  </span>
-                  <span>
+                  </a>
+                  <a href="##">
                     <BsYoutube size="35px" color="white" />
-                  </span>
-                  <span>
+                  </a>
+                  <a href="##">
                     <BsLinkedin size="35px" color="white" />
-                  </span>
+                  </a>
                 </Overlay>
               </WrapperImg>
               <div>

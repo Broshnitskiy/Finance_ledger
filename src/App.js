@@ -5,6 +5,7 @@ import { AboutSection } from './components/about/AboutSection';
 import { CasesSection } from './components/cases/CasesSection';
 import { BlogSection } from './components/blog/BlogSection';
 import { OurTeamSection } from './components/our-team/OurTeamSection';
+import { Footer } from './components/footer/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <BlogSection />
         <OurTeamSection />
       </main>
+      <Footer />
     </>
   );
 }
