@@ -1,5 +1,13 @@
 import React from 'react';
-import { Section, P, WrapperImg, Overlay } from './OurTeamSection.styled';
+import {
+  Section,
+  P,
+  WrapperImg,
+  Overlay,
+  List,
+  ListItem,
+  WrapperText,
+} from './OurTeamSection.styled';
 import { galleryOurTeamImages } from '../../gallery/galleryOurTeamImages';
 import { BsFacebook, BsTwitter, BsYoutube, BsLinkedin } from 'react-icons/bs';
 
@@ -15,9 +23,9 @@ export const OurTeamSection = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
           sapiente!
         </p>
-        <ul>
+        <List>
           {galleryOurTeamImages.map(el => (
-            <li key={el.id}>
+            <ListItem key={el.id}>
               <WrapperImg>
                 <picture>
                   <source
@@ -30,26 +38,26 @@ export const OurTeamSection = () => {
                 </picture>
                 <Overlay>
                   <a href="##">
-                    <BsFacebook size="35px" color="white" />
+                    <BsFacebook size="35px" />
                   </a>
                   <a href="##">
-                    <BsTwitter size="35px" color="white" />
+                    <BsTwitter size="35px" />
                   </a>
                   <a href="##">
-                    <BsYoutube size="35px" color="white" />
+                    <BsYoutube size="35px" />
                   </a>
                   <a href="##">
-                    <BsLinkedin size="35px" color="white" />
+                    <BsLinkedin size="35px" />
                   </a>
                 </Overlay>
               </WrapperImg>
-              <div>
+              <WrapperText>
                 <h3>{el.name}</h3>
                 <p>{el.position}</p>
-              </div>
-            </li>
+              </WrapperText>
+            </ListItem>
           ))}
-        </ul>
+        </List>
       </Container>
     </Section>
   );
