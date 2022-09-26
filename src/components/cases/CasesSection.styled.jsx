@@ -24,6 +24,10 @@ export const Section = styled.section`
     margin-bottom: 8px;
   }
 
+  img:hover {
+    opacity: 0.6;
+  }
+
   @media screen and (min-width: 768px) {
     font-size: 18px;
     line-height: 25px;
