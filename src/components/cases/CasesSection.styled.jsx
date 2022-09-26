@@ -20,8 +20,7 @@ export const Section = styled.section`
   img {
     cursor: pointer;
     object-fit: cover;
-    width: 280px;
-    height: 176px;
+    width: 440px;
     margin-bottom: 8px;
   }
 
@@ -38,6 +37,13 @@ export const Section = styled.section`
     h2 + p {
       margin-bottom: 30px;
     }
+
+    img {
+      width: 222px;
+      margin-bottom: 18px;
+      margin-left: 18px;
+      flex-basis: calc(100% / 3 - 18px);
+    }
   }
 
   @media screen and (min-width: 1360px) {
@@ -50,4 +56,19 @@ export const Section = styled.section`
 
 export const P = styled.p`
   margin-bottom: 16px;
+`;
+
+export const Div = styled.div`
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -18px;
+    margin-left: -18px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding-bottom: 70px;
+  }
 `;

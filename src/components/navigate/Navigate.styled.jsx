@@ -8,6 +8,10 @@ export const Header = styled.header`
   left: 50%;
   transform: translate(-50%);
   background-color: ${prop => (prop.scrolled ? 'rgba(0, 0, 0, 0.6)' : 'unset')};
+
+  @media (max-width: 480px) {
+    width: 480px;
+  } ;
 `;
 
 export const Div = styled.div`
