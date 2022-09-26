@@ -7,7 +7,7 @@ import { Section, Picture, Div, Parag } from './BlogSection.styled';
 
 export const BlogSection = () => {
   return (
-    <Section id="about">
+    <Section id="blog">
       <Picture>
         <source
           srcSet={(imgBlogWebp1x, imgBlogWebp2x)}
