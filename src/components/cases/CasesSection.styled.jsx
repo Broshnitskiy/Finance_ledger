@@ -22,6 +22,7 @@ export const Section = styled.section`
     object-fit: cover;
     width: 440px;
     margin-bottom: 8px;
+    transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   img:hover {
