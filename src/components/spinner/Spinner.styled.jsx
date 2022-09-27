@@ -4,10 +4,9 @@ export const Logo = styled.img`
   height: 20vmin;
   pointer-events: none;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 99;
+  top: 40%;
+  left: 43%;
+  z-index: 101;
   animation: logo-spin infinite 3s linear;
   @keyframes logo-spin {
     from {
