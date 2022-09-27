@@ -5,6 +5,7 @@ import { AboutSection } from './components/about/AboutSection';
 import { CasesSection } from './components/cases/CasesSection';
 import { BlogSection } from './components/blog/BlogSection';
 import { OurTeamSection } from './components/our-team/OurTeamSection';
+import { ContactSection } from './components/contact/ContactSection';
 import { Footer } from './components/footer/Footer';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <CasesSection />
         <BlogSection />
         <OurTeamSection />
+        <ContactSection />
       </main>
       <Footer />
     </>

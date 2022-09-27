@@ -12,7 +12,7 @@ export const Header = styled.header`
 
   @media (max-width: 480px) {
     width: 480px;
-  } ;
+  }
 `;
 
 export const Div = styled.div`

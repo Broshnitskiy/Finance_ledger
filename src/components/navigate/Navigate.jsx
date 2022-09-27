@@ -26,7 +26,7 @@ export const Navigate = () => {
               <a href="#blog">Blog</a>
             </li>
             <li>
-              <a href="#contacts">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </Div>
